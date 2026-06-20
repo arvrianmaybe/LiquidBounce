@@ -24,6 +24,7 @@ import net.ccbluex.liquidbounce.features.module.modules.movement.liquidwalk.mode
 import net.ccbluex.liquidbounce.features.module.modules.movement.liquidwalk.modes.LiquidWalkVanilla
 import net.ccbluex.liquidbounce.features.module.modules.movement.liquidwalk.modes.LiquidWalkVerusB3901
 import net.ccbluex.liquidbounce.features.module.modules.movement.liquidwalk.modes.LiquidWalkVulcan291
+import net.ccbluex.liquidbounce.features.module.modules.movement.liquidwalk.modes.LiquidWalkSolid
 import net.ccbluex.liquidbounce.utils.block.collideBlockIntersects
 import net.ccbluex.liquidbounce.utils.block.isBlockAtPosition
 import net.ccbluex.liquidbounce.utils.entity.box
@@ -42,6 +43,7 @@ object ModuleLiquidWalk : ClientModule(
 
     internal val modes = choices("Mode", LiquidWalkVanilla, arrayOf(
         LiquidWalkVanilla,
+        LiquidWalkSolid,
         LiquidWalkNoCheatPlus,
         LiquidWalkVerusB3901,
         LiquidWalkVulcan291,
